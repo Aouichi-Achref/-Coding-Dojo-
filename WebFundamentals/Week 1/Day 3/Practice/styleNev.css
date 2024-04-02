@@ -1,0 +1,38 @@
+.nav{
+    background-color: rgb(71, 68, 68);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    border: white 2px;
+    align-content: center;
+    font-family: cursive;
+    
+}
+
+
+.nav-title{
+    color: aliceblue;
+}
+
+
+ul{
+    display: flex;
+    width: 500px;
+    height: 20px;
+    justify-content: space-between;
+    list-style-type: none; 
+    padding-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.active{
+    font-size:larger;
+}
+.btn{
+    box-shadow: 15px 25px 27px -1px rgba(0,0,0,0.73);
+    border: black 5px ;
+    background-color: rgb(3, 209, 209);
+    font-size: large;
+}

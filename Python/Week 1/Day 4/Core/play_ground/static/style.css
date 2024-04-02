@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: #9FC5F8;
+    border: 2px solid black;
+}

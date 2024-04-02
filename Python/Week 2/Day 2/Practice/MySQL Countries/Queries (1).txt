@@ -1,0 +1,47 @@
+SELECT * FROM world.city;
+
+SELECT country.name,countrylanguage.Language,countrylanguage.Percentage FROM countryLanguage
+LEFT JOIN country 
+ON country.Code=countryLanguage.Countrycode
+WHERE countrylanguage.Language="Slovene"
+ORDER BY countrylanguage.Percentage ASC;
+
+
+SELECT country.name,COUNT(city.CountryCode) FROM city
+LEFT JOIN country
+ON country.Code=city.Countrycode
+GROUP BY country.name
+ORDER BY COUNT(city.CountryCode) DESC;
+
+
+
+SELECT city.* FROM city
+LEFT JOIN country
+ON country.Code=city.Countrycode
+WHERE country.Name="Mexico" AND city.Population>500000
+ORDER BY city.Population DESC;
+
+SELECT countrylanguage.Language,country.Name,countrylanguage.Percentage FROM country
+LEFT JOIN countrylanguage
+ON country.Code=countrylanguage.CountryCode
+WHERE Percentage>89;
+
+
+SELECT country.Name,SurfaceArea,Population FROM country
+WHERE SurfaceArea<501 AND Population>100000;
+
+SELECT country.Name FROM country
+WHERE country.Capital>200 AND LifeExpectancy>75;
+
+
+SELECT city.* FROM city 
+WHERE District="Buenos Aires" AND Population>500000;
+
+SELECT country.Region, COUNT(country.Region) FROM country
+GROUP BY Region
+ORDER BY COUNT(country.Region) DESC;
+
+
+
+
+

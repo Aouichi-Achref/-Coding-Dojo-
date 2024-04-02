@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>
+        first template from flask server🥂🥂
+    </h1>
+    <hr>
+    <h2>
+        user name: {{user}} <br>
+        user age: {{age}}
+    </h2>
+    <hr>
+
+    {% for user in users %}
+    <p>{{user['name']}}----{{['age']}}</p>
+    {% endfor %}
+
+    <hr>
+
+    {% for i in range (5) %}
+    <h4>{{i}}</h4>
+    {% endfor %}
+
+    <hr>
+    <table class="table table-striped hover">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+        </tr>
+        {%for user in users%}
+        <tr>
+            <td>{{user['name']}}</td>
+            <td>{{user['age']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+    <h2>dojo is a ninja factory🐱‍👤🐱‍👤</h2>
+</body>
+
+</html>

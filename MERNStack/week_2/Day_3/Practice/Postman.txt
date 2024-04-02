@@ -1,0 +1,18 @@
+-- get all --
+https://pokeapi.co/api/v2/pokemon?limit=10&offset=0
+
+-- get for bulbasaur--
+
+https://pokeapi.co/api/v2/pokemon/bulbasaur
+
+-- get for pikachu--
+
+https://pokeapi.co/api/v2/pokemon/pikachu
+
+-- get pokemon with id 5--
+
+https://pokeapi.co/api/v2/pokemon/5
+
+--get pokemon with id 7--
+
+https://pokeapi.co/api/v2/pokemon/7/

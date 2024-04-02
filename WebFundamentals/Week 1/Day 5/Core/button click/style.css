@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-size: cover;
+    width: 800px;
+    height: auto;
+    margin:0 auto;  
+}
+
+.nav{
+    display: flex;
+    justify-content:space-between;
+    margin: 20px 20px;
+    background-color: darkslategray;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+input{
+    height: 20px;
+    border: 2px solid black;
+}
+
+#navbutton{
+    background-color: blue;
+    color: aliceblue;
+    padding: 5px 20px;
+    font-size: large;
+}
+
+
+
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(175, 46, 68);
+    height: 200px;
+
+}
+
+.bottum{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(175, 46, 68);
+    height: 200px;
+}
+
+.leftButt{
+    background-color: rgb(224, 224, 2);
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin: 15px;
+}
+
+#noun{
+    margin: 15px 30px;
+}
+#ninja{
+    font-size: xx-large;
+}
+
+span{
+    color: blue;
+    text-decoration: underline;
+    font-size: larger;    
+}
+
+button{
+    margin: 20px;
+    padding: 5px 10px;
+    box-shadow: 8px 7px 16px 1px rgba(0,0,0,1);
+}
+
+p{
+    margin: 5px 25px 15px auto;
+}
+
+#rightButt{
+    background-color:green;
+}
+
+.right{
+    border: 2px solid rgb(175, 46, 68);
+    height: 120px;
+}
+
+h4{
+    margin: 10px 5px;
+}
+

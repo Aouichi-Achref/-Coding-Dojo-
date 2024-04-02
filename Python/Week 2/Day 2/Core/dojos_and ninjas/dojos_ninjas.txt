@@ -1,0 +1,14 @@
+INSERT into dojos (name) 
+VALUES((%name_value)s);
+
+INSERT into dojos (name) 
+VALUES((%name_value2)s);
+
+INSERT into dojos (name) 
+VALUES((%name_value3)s);
+
+DELETE FROM dojos WHERE id=%(name_value)s;
+
+DELETE FROM dojos WHERE id=%(name_value2)s;
+
+DELETE FROM dojos WHERE id=%(name_value3)s;

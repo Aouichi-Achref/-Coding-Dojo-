@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* all image */
+img{
+    width: 30px;
+}
+.profilImg{
+    margin-top: 40px;
+    width: 60px;
+    margin-left: 25px;
+    border-radius: 50px;
+    border: 2px solid lightslategray ;
+    padding: 2px;
+    background-color: azure;
+}
+.img-map{
+    width: 10px;
+    height: 15px;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* nav bar */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+    height: 50px;
+}
+
+.nav-left{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+}
+
+.nav-title{
+    padding: 5px 10px;
+}
+
+.nav-left>ul{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.active{
+    font-size: larger;
+}
+
+.btn{
+    padding: 5px 10px;
+    background-color: rgb(38, 112, 158);
+    color: white;
+}
+
+/* main page */
+.main{
+    display: flex;
+    gap: 10%;
+    padding: 30px 0;
+    height: 500px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap:40px ;
+    width: 60%;
+
+}
+.card{
+    border: 2px solid lightslategray;
+}
+
+.container{
+    background-color: rgb(20, 140, 204);
+    height: 70PX;
+}
+.profil{
+    padding: 25px;
+}
+.profil>h1{
+    padding: 10px 0px;
+}
+
+.location{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+p{
+    padding: 10px 0;
+}
+.edit-img{
+    width: 15px;
+    height: 15px;
+
+}
+.edit{
+    gap: 5px;
+}
+
+.edit-link{
+    color: blue;
+    text-decoration: underline;
+}
+
+.educ{
+    border: 2px solid lightslategray;
+}
+
+.edu{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    height: 20px;
+    padding: 10px 20px;
+    height:30px ;
+    font-size: larger;
+
+}
+
+.educ > ul{
+    padding: 15px;
+}
+.date{
+    color: rgb(120, 125, 129);
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap:40px ;
+    width: 30%;
+}
+
+.request{
+    border: 2px solid lightslategray ;
+}
+
+.request>h5{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    height: 20px;
+    padding: 10px 20px;
+    height:30px ;
+    font-size: larger;
+}
+
+span{
+    color: white;
+    width: auto;
+    border-radius: 50px;
+    background-color: rgb(66, 66, 71);
+    margin-right: 15px;
+}
+
+.request>ul{
+    padding: 15px;
+}
+
+.request>ul>li{
+    display: flex;
+    justify-content: space-between;
+}
+ul>li>div{
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.connection{
+    border: 2px solid lightslategray ;
+}
+
+.connection>h5{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    height: 20px;
+    padding: 10px 20px;
+    height:30px ;
+    font-size: larger;
+}
+
+.connection>ul{
+    padding: 15px;
+}
+
+.connection>ul>li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.more{
+    padding: 15px;
+    border-top: 2px solid lightslategray;
+}
+.more>a{
+    color: rgb(28, 0, 184);
+}
+
+
+

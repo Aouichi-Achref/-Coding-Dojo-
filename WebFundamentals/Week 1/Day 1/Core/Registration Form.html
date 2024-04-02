@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div>
+        <label> First Name:* </label>
+        <input type="text" name="FirstName" placeholder="">
+    </div> 
+    <div>
+        <label> Last Name:* ></label>
+        <input type="text" name="lastName" placeholder="">
+    </div>
+    <div>
+        <label>Email Adress:*</label>
+        <input type="text" name="emailAdress" placeholder="">
+    </div>
+    <div>
+        <label>Password:*</label>
+        <input type="password" name="password">
+    </div>
+    <div>
+        <label>Confirm Password:*</label>
+        <input type="password" name="confirmPassword">
+    </div>
+    <div>
+        <label>Birthday</label>
+        <input type="date" name="date">
+    </div>
+    <div>
+        <h2>Gender identity</h2>
+        <label for="male"><strong>Male</strong></label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="female"><em>Female</em></label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="non">Non Binary</label>
+        <input type="radio" name="gender" value="non" id="non">
+        <label for="wontSay">i prefer not to say</label>
+        <input type="radio" name="gender" value="wontSay" id="wontSay">
+    </div>
+    
+    <div>
+        <h3>A short discription about myself:*</h3>
+        <textarea name="discription" cols="40" rows="4" placeholder="talk about your self"></textarea>
+    </div>
+    <div>
+        <label>Favorite Language:*</label>
+        <select name="language">
+            <option value="JavaScript">javaScript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+        </select>
+    </div>
+    <div>
+        <label for="accept">Yes, I would like to receive email updates</label>
+        <input type="checkbox" name="accept" id="accept">
+    </div>
+    <div>
+        <button>Create Account</button>
+    </div>
+    <h4> *indicates a required field</h4>
+</body>
+</html>

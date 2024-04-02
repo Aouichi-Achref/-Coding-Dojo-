@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(236, 224, 206);
+}
+
+h1 {
+    background-color: aqua;
+    color: rgb(211, 145, 64);
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+samp {
+    color: rgb(105, 53, 4);
+}
+
+h2 {
+    background-color: rgb(140, 140, 250);
+    color: brown;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    background-color: rgb(0, 0, 175);
+    color: rgb(18, 255, 255);
+    text-decoration: underline;
+    text-align: right;
+}

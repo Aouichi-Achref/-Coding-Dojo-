@@ -1,0 +1,30 @@
+.col{
+    height: 40px;
+    margin: 30px;
+    background-color: blue;
+    flex:1;
+}
+
+.row{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.col-2{
+    margin: 30px;
+    width: 66%;
+    background-color:blue;
+    height: 40px;
+    flex: 2;
+}
+
+.col-3{
+    height: 40px;
+    margin: 30px;
+    flex: 5;
+    background-color: blue;
+
+}
+
