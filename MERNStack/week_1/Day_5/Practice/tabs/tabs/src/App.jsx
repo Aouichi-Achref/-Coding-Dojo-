@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Tabs from './components/tabs'
 import './App.css'
 
