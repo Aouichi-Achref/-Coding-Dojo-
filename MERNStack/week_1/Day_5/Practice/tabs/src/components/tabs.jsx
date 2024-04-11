@@ -11,18 +11,18 @@ const Tabs = ({ tabs }) => {
     }
 
 
-  return (
+    return (
     <>
     <div style={{display:"flex"}} >
-      {tabs.map((content, idx) => (
-        <button onClick={tabsHandler(idx)} key={idx} className={selectedTab === idx ? 'active' : ''} >
-            Tab {idx+1}</button>
-      ))}
+        {tabs.map((content, idx) => (
+            <button onClick={tabsHandler(idx)} key={idx} className={selectedTab === idx ? 'active' : ''} >
+                Tab {idx+1}</button>
+        ))}
     </div>
     <p className="content">{content}</p>
     </>
     
-  );
+    );
 };
 
 export default Tabs;
