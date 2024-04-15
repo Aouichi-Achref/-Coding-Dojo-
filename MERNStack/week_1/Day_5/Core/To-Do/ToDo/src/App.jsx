@@ -10,22 +10,24 @@ function App() {
       return savedPlans
     }else return []
   };
+
+
   const savedPlans = getPlansFromSrorage();
-  // const [plans, setPlans] = useState([
-  //   { content: "Wake up at 6am", status: false },
-  //   { content: "Eat breakfast", status: true }])
   const [plans, setPlans] = useState(savedPlans)
+
   const addPlan = (newPlan) => {
-    setPlans([...plans, newPlan]) // 5s
-    // const newPlans  = [...plans, newPlan]
-    localStorage.setItem("plans", JSON.stringify([...plans, newPlan])) //2s
+    setPlans([...plans, newPlan]) 
+    localStorage.setItem("plans", JSON.stringify([...plans, newPlan])) 
   }
+
+
   const updatePlan = (index) => {
     const plansUpdated = [...plans]
     plansUpdated[index].status = !plans[index].status
     setPlans(plansUpdated)
     localStorage.setItem("plans", JSON.stringify(plansUpdated))
   }
+  
   const deletePlan = (index) => {
     const filtredPlans = plans.filter((plans, idx) => idx != index)
     setPlans(filtredPlans)

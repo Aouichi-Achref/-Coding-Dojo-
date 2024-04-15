@@ -25,8 +25,9 @@ const Form = () => {
     return (
     <div>
         <form onSubmit={boxHandler}>
-        <div><h1>set color</h1>
-            <colorset>
+        <div>
+            <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>          
+            <h1>set color</h1>
             <label htmlFor="">Color of box: </label>
             <br />
             <input
@@ -35,12 +36,13 @@ const Form = () => {
             value={color}
             />
             <br />
+            <h1>set color</h1>
             <input
             type="color"
             onChange={(newColor)=> setColor(newColor.target.value)}
             value={color}
-            />
-            </colorset>
+            /></div>
+
             <br /><h1>set size</h1><br />
             <sizeset>
             <label htmlFor="">size of box: </label>
@@ -53,7 +55,7 @@ const Form = () => {
         </div>
         <button>Add</button>
         </form>
-        <Display colors={colors} size={size}/>
+        <Display colors={colors} size={sizes}/>
     </div>
     );
 };

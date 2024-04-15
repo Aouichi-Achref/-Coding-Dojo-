@@ -1,0 +1,30 @@
+/* Tab.module.css */
+
+/* Styles for the content */
+.content {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    color: orange; /* Change text color for content */
+    font-size: xx-large;
+}
+
+.tabButton.active {
+    opacity: 1;
+    background-color: aqua;
+}
+
+
+.tabButton.active {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    background-color: teal; /* Change background color for inactive tab */
+    color: orange; /* Change text color for inactive tab */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tabButton.active {
+    background-color: orange; /* Change background color for active tab */
+    color: #fff; /* Change text color for active tab */
+}
