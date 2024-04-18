@@ -7,6 +7,10 @@ const app = express();
 app.use( express.json() );
 app.use( express.urlencoded({ extended: true }) );
 
+const AllRoutes =require("./routes/routes")
+console.log("=====>", AllRoutes)
+AllRoutes(app)
+
 // const createProduct = () => {
 //     const newFake = {
 //         name: faker.commerce.productName(),
@@ -43,36 +47,6 @@ const createCompany = () => {
 // const newFakeProduct = createProduct();
 // console.log("========>>>",newFakeProduct);
 
-// ! test route
-app.get('/', (req , res) => {
-    // ? console to see 'req.body'and we can remove 'not used'
-    console.log("=======>=======>=======>"
-    ,req.body,"<=======<=========<===========<=========<========");
-    res.json({message : "server is up and running " , ok : true})
-})
-
-app.post('/api/users/new', (req, res) => {
-    req.body = createUser()
-    // ? console to see 'req.body'
-    console.log("=======>=======>=======>"
-    ,req.body,"<=======<=========<===========<=========<========");
-    res.json({ newUser: req.body, message: "User created successfully", ok: true })
-})
-
-app.post(`/api/companies/new` , (req , res) => {
-    req.body = createCompany()
-    // ? console to see 'req.body'
-    console.log("=======>=======>=======>"
-    ,req.body,"<=======<=========<===========<=========<========");
-    res.json({ newCompany : req.body , message :" company created successfully" , ok : true})
-})
-
-app.post(`/api/user/company` , (req , res) => {
-    // ? console to see 'req.body' and we can remove 'not used'
-    console.log("=======>=======>=======>"
-    ,req.body,"<=======<=========<===========<=========<========");
-    res.json({  newUser : createUser() ,newCompany : createCompany() , message :" user and company are created successfully" , ok : true})
-})
 
 
 app.listen(5000,()=>{console.log(">>>> Server is up and running on PORT 5000 and ready for your REQest and RESponce<<<<<<<")})
