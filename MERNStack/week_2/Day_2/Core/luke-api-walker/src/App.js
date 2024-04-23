@@ -19,7 +19,6 @@ function App() {
         <Route path='/error' element={<Error/>}/>
         <Route path='/:choice/:id' element={<People/>} />
         <Route path='/:id' element={<Planet/>} />
-        <Route path='/error' element={<Error/>} />
         <Route path='/*' element={<Error/>} />
       </Routes>
     </div>

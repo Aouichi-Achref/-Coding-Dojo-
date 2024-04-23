@@ -1,24 +1,18 @@
 import React from 'react';
 import './App.css';
-import Header from './Components/Header';
-import Navigation from './Components/Navigation';
-import Main from './Components/Main';
-import SubContents from './Components/SubContents';
-import Advertisement from './Components/Advertisement';
+import SubContents from './components/SubContents';
+import Navigation from './components/Navigation';
+import Main from './components/main';
+import Header from './components/Header';
+import Advertisement from './components/Advertisement';
+
+
 
                 
 function App() {
   return (
-    <div className="app">
-        <Header />
-        <Navigation />
-        <Main>
-            <SubContents />
-            <SubContents />
-            <SubContents />
-            <Advertisement />
-        </Main>
-    </div>
+    <div  style={{background:"aqua"}} >
+  </div>
   );
 }
                 
