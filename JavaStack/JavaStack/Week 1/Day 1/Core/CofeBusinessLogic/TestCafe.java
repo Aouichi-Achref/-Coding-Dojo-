@@ -25,7 +25,7 @@ public class TestCafe {
         appTest.displayMenu(menu);
 
         System.out.println("\n----- Add Print Price chart test-----");
-        appTest.printPriceChart(/*"latte",4.0,3*/);
+        appTest.printPriceChart("latte",4.0,3);
 
         System.out.println("\n----- Add Customer Test-----");
         ArrayList<String> customers = new ArrayList<String>();

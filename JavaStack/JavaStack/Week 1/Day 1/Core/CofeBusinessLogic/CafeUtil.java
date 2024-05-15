@@ -25,20 +25,21 @@ public class CafeUtil{
         System.out.println(i+" "+menuItems.get(i));
         }
     }
-    public void printPriceChart(/*String product, double price, int maxQuantity*/){
+    public void printPriceChart(String Product, double Price, int Quantity){
 
-        System.out.println("Please enter Product Name:");
-        String Productname = System.console().readLine();
+        //! take Product , Price and Quantity from console 
+        /** System.out.println("Please enter Product Name:");//! ask for Product Name
+        String Product = System.console().readLine(); //! stor product Name
 
-        System.out.println("Please enter quantity:");
-        String QuantityAsString = System.console().readLine();//! now need to convert to int
-        int Quantity=Integer.parseInt(QuantityAsString);
+        System.out.println("Please enter quantity:");//! ask for Quantity
+        String QuantityAsString = System.console().readLine();//!KHOUDHHA fi String 
+        int Quantity=Integer.parseInt(QuantityAsString);//!convert and stor as int
 
-        System.out.println("now worker will put price :");
-        String PriceAsString = System.console().readLine();//! now need to convert to double
-        Double Price=Double.parseDouble(PriceAsString);
+        System.out.println("now worker will put price :");//! ask for Quantity
+        String PriceAsString = System.console().readLine();//!KHOUDHHA fi String 
+        Double Price=Double.parseDouble(PriceAsString); **///!convert and stor as Double
 
-            System.out.println(Productname);
+            System.out.println(Product);
             for(int i=0;i<Quantity;i++){
                 if(i<1){
                     System.out.println(i+1 +" - $"+ (i+1)*Price);
