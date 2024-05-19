@@ -27,17 +27,7 @@ public class CafeUtil{
     }
     public void printPriceChart(String Product, double Price, int Quantity){
 
-        //! take Product , Price and Quantity from console 
-        /** System.out.println("Please enter Product Name:");//! ask for Product Name
-        String Product = System.console().readLine(); //! stor product Name
 
-        System.out.println("Please enter quantity:");//! ask for Quantity
-        String QuantityAsString = System.console().readLine();//!KHOUDHHA fi String 
-        int Quantity=Integer.parseInt(QuantityAsString);//!convert and stor as int
-
-        System.out.println("now worker will put price :");//! ask for Quantity
-        String PriceAsString = System.console().readLine();//!KHOUDHHA fi String 
-        Double Price=Double.parseDouble(PriceAsString); **///!convert and stor as Double
 
             System.out.println(Product);
             for(int i=0;i<Quantity;i++){
