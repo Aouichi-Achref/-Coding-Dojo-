@@ -1,0 +1,3 @@
+INDEX VERSION 1.134
+C:\Users\aouic\Desktop\work station\Fruity Loops\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4183376397.index
+\Fruity\src\main\java
