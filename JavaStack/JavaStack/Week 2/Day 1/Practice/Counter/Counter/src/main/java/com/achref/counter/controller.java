@@ -1,0 +1,24 @@
+package com.achref.counter;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+public class controller {
+	int count=0;
+	@GetMapping("/counter")
+	public String ounter() {
+		
+		return "count.jsp";
+	}
+	
+	@GetMapping("/")
+	public String ountera(HttpSession sess) {
+		count+=1;
+		sess.setAttribute("count", count);
+		
+		return "welcome.jsp";
+	}
+}

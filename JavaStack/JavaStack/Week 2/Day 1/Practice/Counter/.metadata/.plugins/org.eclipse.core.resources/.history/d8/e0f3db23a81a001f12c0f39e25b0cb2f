@@ -1,0 +1,18 @@
+package com.achref.counter;
+
+public class controller {
+	int count=0;
+	@GetMapping("/counter")
+	public String ounter() {
+		
+		return "index.jsp";
+	}
+	
+	@GetMapping("/")
+	public String ountera(HttpSession sess) {
+		count+=1;
+		sess.setAttribute("count", count);
+		
+		return "welcome.jsp";
+	}
+}

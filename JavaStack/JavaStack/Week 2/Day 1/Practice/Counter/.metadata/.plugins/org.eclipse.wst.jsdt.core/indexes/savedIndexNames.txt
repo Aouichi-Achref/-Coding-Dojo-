@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\aouic\Desktop\work station\Counter\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4146787169.index
+603510753.index
+1023669035.index
+353119997.index
+3899081864.index
+1883497748.index
