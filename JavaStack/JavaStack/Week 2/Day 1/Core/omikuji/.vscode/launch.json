@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-OmikijiApplication<omikiji>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.achref.omikiji.OmikijiApplication",
+            "projectName": "omikiji",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
