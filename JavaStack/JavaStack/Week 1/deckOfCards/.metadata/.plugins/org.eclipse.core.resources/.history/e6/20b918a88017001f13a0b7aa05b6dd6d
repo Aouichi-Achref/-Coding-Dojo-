@@ -1,0 +1,29 @@
+package com.code.deckOfCards;
+
+import java.util.HashMap;
+
+public class Card {
+	
+	private String suit;
+	private int rank;
+	private String name;
+	
+	public Card (String suit,int rank) {
+		this.suit=suit;
+		this.rank=rank;
+		this.name="";
+		HashMap<Integer,String> names = new HashMap<Integer,String>();
+		
+		names.put(1, "ACE");
+		names.put(11, "jack");
+		names.put(12,"Queen");
+		names.put(13, "KING");
+		
+		if(names.get(rank) != null) {
+			this.name=Integer.toString(rank);
+		}else {
+			this.name = Integer.toString(rank)
+		}
+	}
+
+}

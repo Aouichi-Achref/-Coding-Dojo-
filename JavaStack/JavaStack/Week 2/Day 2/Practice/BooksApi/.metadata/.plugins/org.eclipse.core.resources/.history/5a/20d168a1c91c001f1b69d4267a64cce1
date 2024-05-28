@@ -1,0 +1,27 @@
+package com.achre.BookApi.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.achre.BookApi.models.Book;
+import com.achre.BookApi.repositories.BookRepositories;
+
+@Service
+public class BookService {
+	
+	@Autowired
+	BookRepositories bookRepo;
+	
+    
+    // returns all the books
+	public List<Book> getAllBook(){
+		return bookRepo.findAll();
+	}
+	   // creates a book
+	public Book createBook(Book book) {
+		return bookRepo.save(book);
+	}
+}

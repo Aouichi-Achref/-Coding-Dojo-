@@ -1,0 +1,20 @@
+package com.code.deckOfCards;
+
+public class Game {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Deck myDeck =new Deck();
+		myDeck.shuffle();
+		
+		Hand playerHand = new Hand("player",false);
+		Hand dealerHand = new Hand("player",false);
+		
+		dealerHand.addCard(myDeck);
+		dealerHand.addCard(myDeck);
+		
+		playerHand.addCard(myDeck);
+		
+	}
+
+}

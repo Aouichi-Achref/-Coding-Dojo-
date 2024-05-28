@@ -1,0 +1,6 @@
+package com.code.deckOfCards;
+
+public class Hand {
+	
+	private String name;
+}

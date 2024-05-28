@@ -1,0 +1,17 @@
+package com.code.deckOfCards;
+
+import java.util.ArrayList;
+
+public class Hand {
+	
+	private String name;
+	private ArrayList<Card> myCards;
+	private Boolean hidden ;
+	public Hand(String name,Boolean hidden) {
+		super();
+		this.name=name;
+		this.hidden=hidden;
+		this.myCards=new ArrayList<Card>();
+	}
+	
+}

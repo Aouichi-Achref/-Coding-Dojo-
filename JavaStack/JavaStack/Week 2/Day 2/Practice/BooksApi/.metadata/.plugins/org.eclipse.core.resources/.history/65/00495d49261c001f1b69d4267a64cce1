@@ -1,0 +1,5 @@
+package com.achre.BookApi.repositories;
+
+public interface BookRepositories {
+
+}

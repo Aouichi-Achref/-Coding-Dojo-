@@ -1,0 +1,18 @@
+package com.code.deckOfCards;
+
+import java.util.ArrayList;
+
+public class Deck {
+	private ArrayList<Card> cards;
+
+	public Deck() {
+		super();
+		this.cards=new ArrayList<Card>();
+		for(String name : new String[] {"Hearts","Clubs","Diamonds","Spades");}){
+			for(Integer rank=1;rank<=13;rank++) {
+			}
+			}
+		}
+	}
+	
+}

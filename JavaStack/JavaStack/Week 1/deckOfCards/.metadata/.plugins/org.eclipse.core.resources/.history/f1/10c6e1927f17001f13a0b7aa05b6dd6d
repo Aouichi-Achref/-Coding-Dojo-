@@ -1,0 +1,14 @@
+package com.code.deckOfCards;
+
+public class Card {
+	
+	private String suit;
+	private int rank;
+	private String name;
+	
+	public Card (String suit,int rank) {
+		this.suit=suit;
+		this.rank=rank;
+	}
+
+}

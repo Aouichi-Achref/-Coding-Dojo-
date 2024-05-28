@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\aouic\Desktop\work station\deckOfCards\.metadata\.plugins\org.eclipse.jdt.core
+315069395.index
+1865797976.index
+2503140384.index
