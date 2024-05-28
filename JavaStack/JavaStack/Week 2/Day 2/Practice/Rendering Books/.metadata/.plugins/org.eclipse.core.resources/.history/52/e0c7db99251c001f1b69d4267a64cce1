@@ -1,0 +1,5 @@
+package com.achre.BookApi.models;
+
+public class Book {
+
+}

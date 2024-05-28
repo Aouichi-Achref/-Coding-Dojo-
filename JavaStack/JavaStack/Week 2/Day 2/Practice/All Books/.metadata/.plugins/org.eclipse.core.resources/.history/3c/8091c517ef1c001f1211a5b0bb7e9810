@@ -1,0 +1,32 @@
+package com.achre.BookApi.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.achre.BookApi.models.Book;
+import com.achre.BookApi.services.BookService;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+public class BookController {
+
+	@Autowired
+	BookService bookSer;
+	
+    @GetMapping("/all")
+    public String showAll(Model model, HttpSession session) {
+    Long userId=	(Long) session.getAttribute("user_id");
+    if(userId==null) {
+    	return "redirect:/index";
+    }
+   	List<Book> books = bookSer.getAllBook() ;
+    model.addAttribute("books", books);
+   	return "AllShow.jsp";
+    }
+    @GetMapping
+}
