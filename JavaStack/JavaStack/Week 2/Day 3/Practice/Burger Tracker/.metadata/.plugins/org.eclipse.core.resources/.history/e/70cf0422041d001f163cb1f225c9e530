@@ -1,0 +1,17 @@
+package com.achref.burger.controller;
+
+import org.antlr.v4.runtime.misc.NotNull;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Burgers")
+public class Burger {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
+	@NotNull
+}

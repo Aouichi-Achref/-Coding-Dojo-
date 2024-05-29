@@ -1,0 +1,10 @@
+package com.achref.burger.reposiotry;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.achref.burger.model.Burger;
+@Repository
+public interface BurgerRepo extends CrudRepository<Burger, Long> {
+
+}

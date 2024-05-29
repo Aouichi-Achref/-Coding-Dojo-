@@ -1,0 +1,20 @@
+package com.achref.burger.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.achref.burger.model.Burger;
+import com.achref.burger.reposiotry.BurgerRepo;
+
+@Service
+public class BurgeSer {
+
+	@Autowired
+	BurgerRepo burgerRepo;
+	
+//	create Burger
+	public Burger createBurger(Burger burger) {
+		return BurgerRepo.save(burger)
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.achref.burger.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.achref.burger.service.BurgeSer;
+
+@Controller
+public class BurgerController {
+
+	@Autowired
+	public BurgeSer burgerSer;
+	
+	@GetMapping
+}

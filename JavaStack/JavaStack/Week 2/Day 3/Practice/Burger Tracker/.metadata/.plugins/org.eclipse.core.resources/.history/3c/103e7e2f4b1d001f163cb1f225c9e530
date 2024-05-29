@@ -1,0 +1,5 @@
+package com.achref.burger.reposiotry;
+
+public interface BurgerRepo {
+
+}

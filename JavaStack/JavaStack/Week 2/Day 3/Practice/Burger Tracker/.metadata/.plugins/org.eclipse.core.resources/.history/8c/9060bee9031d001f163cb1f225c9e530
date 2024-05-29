@@ -1,0 +1,10 @@
+package com.achref.burger.controller;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Burger")
+public class Burger {
+
+}
