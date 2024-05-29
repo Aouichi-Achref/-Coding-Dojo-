@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\aouic\Desktop\work station\Burger Tracker\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+775658243.index
+2143520180.index
+890392135.index
+1712708873.index
+1966499172.index
+1458895033.index
+3332787507.index

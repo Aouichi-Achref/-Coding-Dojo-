@@ -1,0 +1,5 @@
+package com.achref.burger.controller;
+
+public class Burger {
+
+}
