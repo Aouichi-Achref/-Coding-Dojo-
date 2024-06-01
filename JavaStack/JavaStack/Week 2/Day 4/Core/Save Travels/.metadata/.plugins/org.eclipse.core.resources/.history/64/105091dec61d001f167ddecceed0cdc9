@@ -1,0 +1,13 @@
+package com.achref.save.travels.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.achref.save.travels.repositories.ExpensesRepository;
+
+@Service
+public class ExpensesService {
+	
+	@Autowired
+	ExpensesRepository expensesRepo
+}

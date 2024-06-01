@@ -1,0 +1,22 @@
+package com.achref.save.travels.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+import com.achref.save.travels.models.Expenses;
+import com.achref.save.travels.services.ExpensesService;
+
+@Controller
+public class ExpensesController {
+
+	@Autowired
+	ExpensesService expensesSer;
+	
+	@GetMapping("/expenses")
+	public String newExpenses(@ModelAttribute("expenses")Expenses expenses,Model model)
+	
+}

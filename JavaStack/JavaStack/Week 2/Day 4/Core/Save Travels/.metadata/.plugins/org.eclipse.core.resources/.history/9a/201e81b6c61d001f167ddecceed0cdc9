@@ -1,0 +1,11 @@
+package com.achref.save.travels.repositories;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.achref.save.travels.models.Expenses;
+
+public interface ExpensesRepository extends CrudRepository<Expenses, Long>{
+	List<Expenses> findAll();
+}
