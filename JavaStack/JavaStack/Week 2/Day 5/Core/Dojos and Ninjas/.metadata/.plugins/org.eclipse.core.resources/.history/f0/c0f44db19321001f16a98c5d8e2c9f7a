@@ -1,0 +1,8 @@
+package com.achref.dojoninja.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class DojoService {
+
+}

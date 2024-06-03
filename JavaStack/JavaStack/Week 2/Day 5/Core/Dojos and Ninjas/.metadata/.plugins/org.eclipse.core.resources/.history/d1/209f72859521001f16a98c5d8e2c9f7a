@@ -1,0 +1,26 @@
+package com.achref.dojoninja.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.achref.dojoninja.entity.Ninja;
+
+import jakarta.validation.Valid;
+
+@Controller
+public class NinjaController {
+
+	@GetMapping("ninja/new")
+	public String newNinja(@ModelAttribute("ninja") Ninja ninja){
+		
+		return "new.jsp";
+	}
+	
+	@PostMapping("create/ninja")
+	public String createNinja(@Valid @modelAttribute("ninja")Ninja ninja,BindingResult result) {
+		
+	}
+}

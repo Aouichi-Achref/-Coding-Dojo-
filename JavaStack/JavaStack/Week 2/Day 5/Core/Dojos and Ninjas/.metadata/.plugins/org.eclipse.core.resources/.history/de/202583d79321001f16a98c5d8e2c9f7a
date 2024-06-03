@@ -1,0 +1,32 @@
+package com.achref.dojoninja.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.achref.dojoninja.repository.DojoRepo;
+
+@Service
+public class DojoService {
+
+	@Autowired
+	private DojoRepo dojoRepo;
+	
+	public Dojo createCar(Dojo car) {
+		System.out.println(car);
+		return carRepo.save(car);
+	}
+	
+	//READ ONE 
+	public Car findCarById(Long id) {
+		Optional<Car> optCar = carRepo.findById(id);
+		if(optCar.isPresent()) {
+			return optCar.get();
+		}
+		return null;
+	}
+	
+	//read all 
+	public List<Car> allCars(){
+		return carRepo.findAll();
+	}
+}

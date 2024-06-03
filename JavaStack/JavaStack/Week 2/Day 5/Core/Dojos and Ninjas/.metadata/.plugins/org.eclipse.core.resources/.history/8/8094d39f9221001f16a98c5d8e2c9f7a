@@ -1,0 +1,21 @@
+package com.achref.dojoninja.entity;
+
+public class Ninja {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String firstName;
+    private String lastName;
+    private int age;
+    @Column(updatable=false)
+    private Date createdAt;
+    private Date updatedAt;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="dojo_id")
+    private Dojo dojo;
+    
+    public Ninja() {
+        
+    }
+}

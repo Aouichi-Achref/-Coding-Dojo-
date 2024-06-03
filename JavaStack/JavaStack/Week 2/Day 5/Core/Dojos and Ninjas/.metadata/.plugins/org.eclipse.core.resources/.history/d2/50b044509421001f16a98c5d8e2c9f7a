@@ -1,0 +1,13 @@
+package com.achref.dojoninja.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.achref.dojoninja.repository.NinjaRepo;
+
+@Service
+public class NinjaSevice {
+	
+	@Autowired
+	private NinjaRepo ninjaRepo;
+}

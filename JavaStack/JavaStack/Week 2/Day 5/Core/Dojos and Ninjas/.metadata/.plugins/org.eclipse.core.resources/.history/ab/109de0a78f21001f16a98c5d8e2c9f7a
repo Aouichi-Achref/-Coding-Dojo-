@@ -1,0 +1,5 @@
+package com.achref.dojoninja.entity;
+
+public class Dojo {
+
+}

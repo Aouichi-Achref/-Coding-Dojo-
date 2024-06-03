@@ -1,0 +1,5 @@
+package com.achref.dojoninja.repository;
+
+public interface DojoRepo {
+
+}

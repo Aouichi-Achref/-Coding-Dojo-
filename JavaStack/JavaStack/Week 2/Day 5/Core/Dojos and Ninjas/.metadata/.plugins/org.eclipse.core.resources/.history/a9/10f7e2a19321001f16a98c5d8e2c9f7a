@@ -1,0 +1,6 @@
+package com.achref.dojoninja.service;
+
+@Service
+public class DojoService {
+
+}

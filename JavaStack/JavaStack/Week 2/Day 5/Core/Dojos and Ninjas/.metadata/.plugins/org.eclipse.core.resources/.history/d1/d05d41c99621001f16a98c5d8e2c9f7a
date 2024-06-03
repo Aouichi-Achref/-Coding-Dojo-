@@ -1,0 +1,38 @@
+package com.achref.dojoninja.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.achref.dojoninja.entity.Dojo;
+import com.achref.dojoninja.entity.Ninja;
+import com.achref.dojoninja.service.DojoService;
+
+import jakarta.validation.Valid;
+
+@Controller
+public class DojoController {
+
+	@Autowired
+	public DojoService dojoServ;
+	@GetMapping("dojo/new")
+	public String newDojo(@ModelAttribute("dojo")Dojo dojo) {
+		return "newDojo.jsp";
+	}
+	
+	@PostMapping("create/Dojo")
+	public String createNinja(@Valid @ModelAttribute("ninja")Ninja ninja,BindingResult result) {
+		if(result.hasErrors()) {
+			//return the new page
+			return"new.jsp";
+			//if there are no errors
+		}else {
+			Ninja newDojo = dojoServ.createDojo(ninja);
+			//redirect to the show page of the car
+			return "redirect:dojo/new";
+		}
+	}
+}

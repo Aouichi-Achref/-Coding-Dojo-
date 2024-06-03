@@ -1,0 +1,8 @@
+package com.achref.dojoninja.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Dojo {
+	
+}

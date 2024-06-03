@@ -1,0 +1,9 @@
+package com.achref.dojoninja.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+@Service
+public class NinjaSevice {
+	
+	@Autowired
+}

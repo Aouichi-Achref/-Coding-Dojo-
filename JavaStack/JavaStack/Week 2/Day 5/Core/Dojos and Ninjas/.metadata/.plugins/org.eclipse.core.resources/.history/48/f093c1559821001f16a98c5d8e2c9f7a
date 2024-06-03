@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container mt-3">
+<h1>Add an<span class="text-primary">Expenses</span>:</h1>
+<form:form action="/create/expenses" methode="post" modelAttribute="expenses">
+	
+	
+	<form:label path="name" class="form-label"><span class="text-primary">Expenses</span> name</form:label>
+	<form:input path="name" class="form-control"></form:input>
+	<form:errors path="name" class="text-danger"></form:errors>
+	<br>
+	<form:label path="vendor" class="form-label">vendor</form:label>
+	<form:input path="vendor" class="form-control"></form:input>
+	<form:errors path="vendor" class="text-danger"></form:errors>
+	<br>
+	<form:label path="amount" class="form-label">amount</form:label>
+	<form:input path="amount" type="number" class="form-control"></form:input>
+	<form:errors path="amount" class="text-danger"></form:errors>
+	<br>
+	<form:label path="description" class="form-label">description</form:label>
+	<form:textarea path="description"  class="form-control"></form:textarea>
+	<form:errors path="description" class="text-danger"></form:errors>
+	<br>
+	<div>
+	<input type="submit" value="Create" class="btn btn-primary">
+	</div>
+	
+</form:form>
+</div>
+</body>
+</html>
