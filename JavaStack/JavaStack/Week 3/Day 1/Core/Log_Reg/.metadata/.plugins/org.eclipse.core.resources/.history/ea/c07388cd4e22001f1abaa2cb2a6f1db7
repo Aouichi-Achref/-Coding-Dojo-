@@ -1,0 +1,8 @@
+package com.achref.logreg.Entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class LoginUser {
+
+}

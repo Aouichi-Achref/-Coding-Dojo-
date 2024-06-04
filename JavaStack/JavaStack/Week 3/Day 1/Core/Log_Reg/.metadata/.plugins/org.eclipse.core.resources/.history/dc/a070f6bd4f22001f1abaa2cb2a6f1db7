@@ -1,0 +1,6 @@
+package com.achref.logreg.Service;
+
+@Service
+public class UserServ {
+
+}

@@ -1,0 +1,11 @@
+package com.achref.logreg.Repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.achref.logreg.Entity.User;
+
+@Repository
+public interface UserRepo extends CrudRepository<User, Long> {
+	
+}

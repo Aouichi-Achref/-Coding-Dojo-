@@ -1,0 +1,5 @@
+package com.achref.logreg.Repository;
+
+public interface UserRepo {
+
+}

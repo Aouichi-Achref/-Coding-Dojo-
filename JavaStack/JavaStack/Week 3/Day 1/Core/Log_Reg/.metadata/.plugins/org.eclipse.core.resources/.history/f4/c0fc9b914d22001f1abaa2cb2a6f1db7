@@ -1,0 +1,12 @@
+package com.achref.logreg.Entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+@Table(name = "users")
+public class User {
+
+//	evry user member variables
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+}

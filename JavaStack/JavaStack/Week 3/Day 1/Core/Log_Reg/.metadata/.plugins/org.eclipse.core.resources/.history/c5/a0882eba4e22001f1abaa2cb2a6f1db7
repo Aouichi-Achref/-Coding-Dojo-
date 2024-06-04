@@ -1,0 +1,5 @@
+package com.achref.logreg.Entity;
+
+public class LoginUser {
+
+}

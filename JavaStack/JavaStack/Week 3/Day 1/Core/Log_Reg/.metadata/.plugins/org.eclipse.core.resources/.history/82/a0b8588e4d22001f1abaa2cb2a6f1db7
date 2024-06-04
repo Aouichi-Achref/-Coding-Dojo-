@@ -1,0 +1,7 @@
+package com.achref.logreg.Entity;
+
+
+@Entity
+public class User {
+
+}
