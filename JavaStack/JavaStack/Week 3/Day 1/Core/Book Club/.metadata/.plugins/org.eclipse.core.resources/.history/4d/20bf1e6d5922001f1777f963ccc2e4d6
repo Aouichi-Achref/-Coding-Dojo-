@@ -1,0 +1,10 @@
+package com.achref.BookClub.Entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(naùe="users")
+public class User {
+
+}

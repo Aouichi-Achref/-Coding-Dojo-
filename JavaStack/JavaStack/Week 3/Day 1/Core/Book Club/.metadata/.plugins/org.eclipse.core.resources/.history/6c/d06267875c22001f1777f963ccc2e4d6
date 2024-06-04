@@ -1,0 +1,8 @@
+package com.achref.BookClub.Service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class BookServ {
+
+}

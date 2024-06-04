@@ -1,0 +1,6 @@
+package com.achref.BookClub.Entity;
+
+@Entity
+public class Book {
+
+}

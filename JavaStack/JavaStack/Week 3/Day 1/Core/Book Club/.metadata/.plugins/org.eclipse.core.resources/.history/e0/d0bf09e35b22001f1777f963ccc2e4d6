@@ -1,0 +1,5 @@
+package com.achref.BookClub.repository;
+
+public interface BookRepo {
+
+}

@@ -1,0 +1,9 @@
+package com.achref.BookClub.Entity;
+
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="books")
+public class Book {
+
+}

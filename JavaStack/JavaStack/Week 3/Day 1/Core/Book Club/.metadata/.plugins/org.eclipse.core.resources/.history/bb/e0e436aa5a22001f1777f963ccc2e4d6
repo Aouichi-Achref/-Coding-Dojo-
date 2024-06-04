@@ -1,0 +1,30 @@
+package com.achref.BookClub.Entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
+
+@Entity
+@Table(name="books")
+public class Book {
+//	STORE THE USER ID 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+//	STORE THE BOOK TITLE 
+	@NotEmpty(message = "Title must not be blank!")
+	@Size(min = 3, max = 50, message = "Title must be between 3 and 50 characters")
+	private String Title;
+//	STORE THE AuTHOR 
+	@NotEmpty(message = "AUTHOR must not be blank !")
+	@Size(min = 3, max = 30, message = "AUTHOR must be between 3 and 30 characters")
+	private String author;
+//	STORE THE THoughts
+	@NotEmpty(message = "Username is required!")
+	@Size(min = 3, max = 30, message = "Username must be between 3 and 30 characters")
+	private String thoughts;
+}

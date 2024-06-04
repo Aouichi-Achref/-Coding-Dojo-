@@ -1,0 +1,13 @@
+package com.achref.BookClub.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.achref.BookClub.repository.BookRepo;
+
+@Service
+public class BookServ {
+	@Autowired
+	private BookRepo bookRepo;
+
+}

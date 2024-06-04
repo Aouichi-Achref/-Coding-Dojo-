@@ -1,0 +1,12 @@
+package com.achref.BookClub.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.achref.BookClub.Service.UserServ;
+
+@Controller
+public class UserController {
+	@Autowired
+	private UserServ userServ;
+}

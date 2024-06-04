@@ -1,0 +1,44 @@
+package com.achref.BookClub.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.achref.BookClub.repository.BookRepo;
+
+@Service
+public class BookServ {
+	@Autowired
+	private BookRepo bookRepo;
+	
+	//create
+	public Car createCar(Car car) {
+		System.out.println(car);
+		return carRepo.save(car);
+	}
+	
+	//READ ONE 
+	public Car findCarById(Long id) {
+		Optional<Car> optCar = carRepo.findById(id);
+		if(optCar.isPresent()) {
+			return optCar.get();
+		}
+		return null;
+	}
+	
+	//read all 
+	public List<Car> allCars(){
+		return carRepo.findAll();
+	}
+
+	//edit 
+	public Car updateCar(Car car) {
+		return carRepo.save(car);
+	}
+
+	//delete
+	public void deleteCar(Long id) {
+		carRepo.deleteById(id);
+	}
+	
+
+}

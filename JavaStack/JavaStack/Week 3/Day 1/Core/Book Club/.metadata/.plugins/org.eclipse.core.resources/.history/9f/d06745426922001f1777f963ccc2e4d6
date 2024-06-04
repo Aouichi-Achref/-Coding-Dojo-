@@ -1,0 +1,50 @@
+package com.achref.BookClub.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+import com.achref.BookClub.Entity.Book;
+import com.achref.BookClub.Entity.User;
+import com.achref.BookClub.Service.BookServ;
+import com.achref.BookClub.Service.UserServ;
+
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+public class BookController {
+	@Autowired
+	private BookServ bookServ;
+	@Autowired
+	private UserServ userServ;
+	
+	@GetMapping("/books")
+	public String allBooks(Model model,HttpSession sess) {
+		Long userId = (Long) sess.getAttribute("user_id");
+		if(userId == null) {
+			//redirect to the login page
+			return "redirect:/";
+		}
+		User loggedUser = userServ.findUserById(userId);
+		model.addAttribute("loggedUser", loggedUser);
+		List<Book> books = bookServ.allBooks();
+		model.addAttribute("books",books);
+		return "allBooks.jsp";
+	}
+	
+	@GetMapping("/new/Book")
+	public String newbook(@ModelAttribute("Book") Book book, HttpSession s) {
+		//get the user id from the session
+		Long userId = (Long) s.getAttribute("user_id");
+		//if the user is not logged in
+		if(userId == null) {
+			//redirect to the login page
+			return "redirect:/";
+		}
+		return"new.jsp";
+	}
+}
